@@ -44,7 +44,7 @@ object Form1: TForm1
         Value = 16.666666666666660000
       end
       item
-        Value = 16.666666666666660000
+        Value = 16.666666666666700000
       end>
     ControlCollection = <
       item
@@ -119,9 +119,9 @@ object Form1: TForm1
     object pnlB: TPanel
       Tag = -1
       AlignWithMargins = True
-      Left = 186
+      Left = 187
       Top = 4
-      Width = 174
+      Width = 175
       Height = 82
       Margins.Left = 4
       Margins.Top = 4
@@ -143,7 +143,7 @@ object Form1: TForm1
     object pnlI: TPanel
       Tag = -1
       AlignWithMargins = True
-      Left = 368
+      Left = 370
       Top = 4
       Width = 174
       Height = 82
@@ -167,9 +167,9 @@ object Form1: TForm1
     object pnlN: TPanel
       Tag = -1
       AlignWithMargins = True
-      Left = 550
+      Left = 552
       Top = 4
-      Width = 174
+      Width = 175
       Height = 82
       Margins.Left = 4
       Margins.Top = 4
@@ -191,9 +191,9 @@ object Form1: TForm1
     object pnlG: TPanel
       Tag = -1
       AlignWithMargins = True
-      Left = 732
+      Left = 735
       Top = 4
-      Width = 174
+      Width = 175
       Height = 82
       Margins.Left = 4
       Margins.Top = 4
@@ -215,9 +215,9 @@ object Form1: TForm1
     object pnlO: TPanel
       Tag = -1
       AlignWithMargins = True
-      Left = 914
+      Left = 918
       Top = 4
-      Width = 179
+      Width = 175
       Height = 82
       Margins.Left = 4
       Margins.Top = 4
@@ -238,9 +238,9 @@ object Form1: TForm1
     end
     object pnlColunaB: TPanel
       AlignWithMargins = True
-      Left = 186
+      Left = 187
       Top = 94
-      Width = 174
+      Width = 175
       Height = 574
       Margins.Left = 4
       Margins.Top = 4
@@ -255,7 +255,7 @@ object Form1: TForm1
     object pnlColunaI: TPanel
       Tag = 1
       AlignWithMargins = True
-      Left = 368
+      Left = 370
       Top = 94
       Width = 174
       Height = 574
@@ -272,9 +272,9 @@ object Form1: TForm1
     object pnlColunaN: TPanel
       Tag = 2
       AlignWithMargins = True
-      Left = 550
+      Left = 552
       Top = 94
-      Width = 174
+      Width = 175
       Height = 574
       Margins.Left = 4
       Margins.Top = 4
@@ -289,9 +289,9 @@ object Form1: TForm1
     object pnlColunaG: TPanel
       Tag = 3
       AlignWithMargins = True
-      Left = 732
+      Left = 735
       Top = 94
-      Width = 174
+      Width = 175
       Height = 574
       Margins.Left = 4
       Margins.Top = 4
@@ -306,9 +306,9 @@ object Form1: TForm1
     object pnlColunaO: TPanel
       Tag = 4
       AlignWithMargins = True
-      Left = 914
+      Left = 918
       Top = 94
-      Width = 179
+      Width = 175
       Height = 574
       Margins.Left = 4
       Margins.Top = 4
@@ -325,7 +325,7 @@ object Form1: TForm1
       AlignWithMargins = True
       Left = 4
       Top = 4
-      Width = 174
+      Width = 175
       Height = 82
       Margins.Left = 4
       Margins.Top = 4
@@ -338,17 +338,18 @@ object Form1: TForm1
       object btnRegistra: TSpeedButton
         Left = 0
         Top = 21
-        Width = 174
+        Width = 175
         Height = 22
         Align = alTop
         Caption = 'Registrar'
         OnClick = btnRegistraClick
         ExplicitLeft = 1
+        ExplicitWidth = 174
       end
       object edtBola: TEdit
         Left = 0
         Top = 0
-        Width = 174
+        Width = 175
         Height = 21
         Align = alTop
         BevelInner = bvNone
@@ -369,7 +370,7 @@ object Form1: TForm1
       AlignWithMargins = True
       Left = 4
       Top = 94
-      Width = 174
+      Width = 175
       Height = 574
       Margins.Left = 4
       Margins.Top = 4
@@ -382,18 +383,19 @@ object Form1: TForm1
       object btnLimpar: TSpeedButton
         Left = 0
         Top = 552
-        Width = 174
+        Width = 175
         Height = 22
         Align = alBottom
         Caption = 'Limpar Sorteadas'
         OnClick = btnLimparClick
         ExplicitLeft = 1
         ExplicitTop = 21
+        ExplicitWidth = 174
       end
       object pnlSorteada: TPanel
         Left = 0
         Top = 37
-        Width = 174
+        Width = 175
         Height = 169
         Align = alTop
         BevelOuter = bvNone
@@ -408,7 +410,7 @@ object Form1: TForm1
         object shpBola: TShape
           Left = 0
           Top = 0
-          Width = 174
+          Width = 175
           Height = 169
           Align = alClient
           Shape = stCircle
@@ -421,7 +423,7 @@ object Form1: TForm1
           AlignWithMargins = True
           Left = 3
           Top = 20
-          Width = 168
+          Width = 169
           Height = 129
           Margins.Top = 20
           Margins.Bottom = 20
@@ -434,7 +436,7 @@ object Form1: TForm1
       object mmoSorteados: TMemo
         Left = 0
         Top = 231
-        Width = 174
+        Width = 175
         Height = 321
         TabStop = False
         Align = alClient
@@ -446,7 +448,7 @@ object Form1: TForm1
         AlignWithMargins = True
         Left = 4
         Top = 4
-        Width = 166
+        Width = 167
         Height = 29
         Margins.Left = 4
         Margins.Top = 4
@@ -470,7 +472,7 @@ object Form1: TForm1
         AlignWithMargins = True
         Left = 4
         Top = 210
-        Width = 166
+        Width = 167
         Height = 17
         Margins.Left = 4
         Margins.Top = 4

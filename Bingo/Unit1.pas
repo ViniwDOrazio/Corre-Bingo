@@ -40,7 +40,7 @@ type
           BOLAS_COLUNA = 15;
     function PegarPanelColuna(iBola: Integer): TPanel;
     procedure MarcarBola(iBola: Integer);
-
+    procedure PanelClick(Sender: TObject);
     { Private declarations }
   public
     { Public declarations }
@@ -76,11 +76,6 @@ begin
   if ((iBola = 0) or (iBola > TOTAL_BOLAS)) then
     Exit;
 
-  if lblSorteada.Caption <> EmptyStr then
-    mmoSorteados.Lines.Text := lblSorteada.Caption + #13#10 + mmoSorteados.Lines.Text;
-
-  lblSorteada.Caption := FormatFloat('00', iBola);
-
   MarcarBola(iBola);
 end;
 
@@ -88,8 +83,6 @@ procedure TForm1.edtBolaKeyPress(Sender: TObject; var Key: Char);
 begin
   if Key = #13 then
     btnRegistraClick(Sender);
-
-
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -117,6 +110,7 @@ begin
     PanelAux.Tag := i;
     PanelAux.Caption := IntToStr(i);
     PanelAux.BevelOuter := bvNone;
+    PanelAux.OnClick := PanelClick;
   end;
 end;
 
@@ -124,10 +118,23 @@ procedure TForm1.MarcarBola(iBola: Integer);
 var PanelColuna: TPanel;
   i: Integer;
 begin
+  if lblSorteada.Caption <> EmptyStr then
+    mmoSorteados.Lines.Text := lblSorteada.Caption + #13#10 + mmoSorteados.Lines.Text;
+
+  lblSorteada.Caption := FormatFloat('00', iBola);
+
   PanelColuna := PegarPanelColuna(iBola);
   for i := 0 to PanelColuna.ControlCount - 1 do
     if (PanelColuna.Controls[i].Tag = iBola) then
       TPanel(PanelColuna.Controls[i]).Color := $00BEBEFF;
+end;
+
+procedure TForm1.PanelClick(Sender: TObject);
+begin
+  if (Sender is TPanel) then
+  begin
+    MarcarBola(TPanel(Sender).Tag);
+  end;
 end;
 
 function TForm1.PegarPanelColuna(iBola: Integer): TPanel;
